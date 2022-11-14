@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins&family=Roboto&display=swap');
+
+/*Declaracion de variable css*/
+:root {
+    /*paleta de colores*/
+    --color-blanco:#fff;
+    --color-marron:#59473F;
+    --color-marronclaro:#a07866;
+    --color-anaranjado:#f69946;
+    --color-hueso:#f5ecd7;
+    --color-marronoscuro:#312824;
+    --color-grismorado: #e2e2e4;
+    --color-gris: #454545;
+    --color-crema:#ffead7;
+    /*tipografias*/
+    --fuente-principal: 'Paytone One', sans-serif;
+    --fuente-secundaria: 'Roboto', sans-serif;
+    --fuente-terciaria: 'Poppins', sans-serif;
+}
+ 
+/*configuracion de todos los h y parrafos*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fuente-principal);
+}
+
+h1 {
+    font-family: var(--fuente-principal);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-marron);
+}
+
+h2 {
+    font-family: var(--fuente-principal);
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--color-blanco);
+}
+
+h3 {
+    font-family: var(--fuente-principal);
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-marron);
+}
+
+h4 {
+    font-family: var(--fuente-principal);
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--color-marron);
+}
+
+h5 {
+    font-family: var(--fuente-secundaria);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+p {
+    font-family: var(--fuente-terciaria);
+    color: var(--color-gris);
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*selectores de estilo de tipo ID*/
+
+#barra-superior {
+    background-color: var(--color-marronclaro);
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#barra-superior a {
+    color: var(--color-hueso);
+    text-decoration: none; 
+    margin-left: 10px;
+}
+
+#barra-superior i {
+    font-size: 20px;
+}
+
+#barra-superior .fila {
+    justify-content: space-between; 
+}
+
+#cabecera {
+     background-color: var(--color-blanco);
+     color: var(--color-marron);
+     padding-top: 20px;
+     padding-bottom: 20px;
+     position: sticky;
+     top: 0px;
+}
+
+#portada {
+     background-image: url("../imagen/perritos\ 2.jpg");
+}
+
+#cabecera i {
+    justify-content: end;
+    font-size: 32px;
+}
+
+#mascotas {
+    flex-basis: 0px;
+    text-align: center;
+}
+
+#mascotas>.contenedor>.fila>.columnay {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+#mascotas>.contenedor>.fila>.columnay:hover {
+    background-color: var(--color-marron);
+    transform: translateY(-20px);
+}
+
+#mascotas>.contenedor>.fila>.columnay:hover h1 {
+    color: var(--color-blanco);
+}
+
+#mascotas>.contenedor>.fila>.columnay:hover p {
+    color: var(--color-blanco);
+}
+
+#mejoropcion {
+    background-color: var(--color-blanco);
+    color: var(--color-marron);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#razon1 {
+    background-color: var(--color-hueso);
+    color: var(--color-marron);
+}
+
+#razon2 {
+    background-color: var(--color-hueso);
+    color: var(--color-marron);
+}
+
+#razon3 {
+    background-color: var(--color-hueso);
+    color: var(--color-marron);
+}
+
+#razon4 {
+    background-color: var(--color-hueso);
+    color: var(--color-marron);
+}
+
+#servicios {
+    background-color: var(--color-crema);
+}
+
+#promociones {
+    background-color: var(--color-hueso);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#clientes {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#testimonios {
+    background: linear-gradient(129deg,#ffffff 0%, #f7ba84 90%);
+}
+
+#unete {
+    background-image: url(../imagen/seccion\ final.jpg);
+}
+
+#pie {
+    background-color: var(--color-crema);
+    color: var(--color-marron);
+    padding-top: 45px;
+    padding-bottom: 45px;
+    line-height: 36px;
+}
+
+#pie a {
+    color: var(--color-marron);
+    text-decoration: none; 
+    margin-left: 10px;
+}
+
+#pie i {
+    font-size: 32px;
+}
+
+#pie .fila {
+    justify-content: space-between; 
+}
+
+#blog {
+    background-image: url(../imagen/fondo-blog-.jpg);
+    text-align: center;
+}
+
+#contactos {
+    background-image: url(../imagen/fondo-contactanos.jpg);
+    text-align: center;
+}
+
+#paginas {
+    background-image: url(../imagen/fondo-paginas-.jpg);
+    text-align: center;
+}
+
+#portafolio {
+    background-image: url(../imagen/fondo-portafolio12.jpg);
+    text-align: center;
+}
+
+#tienda {
+    background-image: url(../imagen/fondo.tienda-.jpg);
+    text-align: center;
+}
+
+
+/*selectores de estilo de tipo class*/
+
+/* class ce contenedores*/
+
+.contenedor_cabecera {
+    max-width: 80%;
+    margin-left: 25px;
+    
+}
+
+.contenedor {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor_1 {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor_2 {
+    max-width: 80%;
+    margin-left: 45px;
+    margin-right: auto;
+}
+
+.contenedor_3 {
+    max-width: 70%;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.contenedor_4 {
+    max-width: 95%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.contenedor_5 {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* class de fila y columnas*/
+
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.columna_0 {
+    flex-basis: 0px; 
+    flex-grow: 1; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.columna {
+    flex-basis: 10px;
+    flex-grow: 1;
+    padding-left: 40px;
+    padding-right: 10px;
+}
+
+.columnay {
+    flex-basis: 0px;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: -8px 18px 31px 6px rgba(0,0,0,0.22);
+}
+
+.columnax {
+    flex-basis: 45px;
+    flex-grow: 1;
+    padding-left: 15px;
+}
+
+.columnaw {
+    flex-grow: 1;
+    flex-basis: 0px;
+
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.columnar {
+    flex-basis: 0px; 
+    flex-grow: 1; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.columna-30 {
+    flex-basis: 30%;
+    max-width: 30%;
+}
+
+/* class para ajustar las imagenes*/
+
+.ajustar_imagen {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 3px 3px 0px -1px rgba(0,0,0,0.25);
+}
+
+.ajustar_img {
+    width: 100%;
+    height: auto;
+}
+
+.ajustar_imagen_ {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.ajustar_fotos {
+    width: 100%;
+    height: auto;
+}
+
+.ajuste_imagen2 {
+    width: 10%;
+    
+}
+
+.ajuste_imagen3 {
+    width: 100%; 
+    height: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.ajuste_imagen4 {
+    width: 100%; 
+    height: auto;
+    border-radius: 5%;
+}
+
+/* class de espacio*/
+
+.espacio {
+    padding-top: 350px;
+    padding-bottom: 350px;
+}
+
+.espacio_2 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    
+}
+
+.espaciio_3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.espacio_4 {
+    padding-top: 10px;
+}
+
+.espaciio_5 {
+    padding: 2px;
+    margin: 10px;
+}
+
+.espacio_6 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.espacio_7 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.espacio_parrafo {
+    text-align: center;
+}
+
+.espacio_cabecera {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* class para resaltar*/
+
+.resaltado {
+    color: var(--color-anaranjado);
+}
+
+.resaltado_2 {
+    color: var(--color-anaranjado);
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.bienvenida {
+    color: var(--color-anaranjado);
+    background-color: #f5ecd7;
+    padding-left: 10px;
+    max-width: 33%;
+}
+
+.centro {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.lupa {
+    padding-left: 55px;
+    padding-right: 15px;
+}
+
+.texto_grande {
+    padding-top: 85px;
+    padding-bottom: 940px;
+    font-size: 80px;
+}
+
+/* class de la barra de menu*/
+
+.logo {
+    width: 180px;
+}
+
+.barra-de-menu  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opciones {
+    list-style-type: none; 
+}
+
+.opciones a {
+    color: var(--color-marron);
+    text-decoration: none;
+}
+
+.apartado-opciones {
+    display: flex;
+    flex-direction: row;
+}
+
+.apartado-opciones li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.apartado-opciones li:hover a { /*para que la palabra pueda cambiar de color al pasar el cursor por encima*/
+    color: var(--color-anaranjado); 
+}
+
+.ajuste_imagen4:hover {
+    filter: opacity(50%);
+}
