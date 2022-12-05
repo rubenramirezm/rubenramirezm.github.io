@@ -15,32 +15,97 @@
     
 </head>
 <body>
-    <header class="contenedor espacio_cabecera">
+    <header id="cabecera" class="espacio_cabecera">
         <div class="contenedor_1">
-            <nav class="barra-de-menu">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="imagen/logo-header.png" class="ajustar_img">
-                    </a> <!-- cierre de a-->
-                </div> <!-- cierre de div-->
-                <ul class="opciones">
-                   <div class="apartado-opciones">
-                        <li><a href="index.html">Home </a></li> 
-                        <li><a href="paginas.html">Paginas</a></li>
-                        <li><a href="portafolio.html">Portafolio</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="tienda.html">Tienda</a></li>
-                        <li><a href="contactos.html">contactos</a></li>
-                        <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li> <!-- significa elementos de la lista -->
-                   </div>
-                </ul> <!-- este codigo nos permite poner opciones-->
-            </nav> <!-- cierre de nav-->
-         </div> <!-- cierre de cabecera-->
-    </header>
+           <nav class="barra-de-menu">
+               <div class="logo">
+                  <a href="index.html">
+                      <img src="imagen/logo-header.png" class="ajustar_img">
+                  </a> <!-- cierre de a-->
+               </div> <!-- cierre de div-->
+               <ul class="opciones">
+                  <div class="apartado-opciones">
+                       <li><a href="index.html">Home </a></li> 
+                       <li><a href="paginas.html">Paginas</a></li>
+                       <li><a href="portafolio.html">Portafolio</a></li>
+                       <li><a href="blog.html">Blog</a></li>
+                       <li><a href="tienda.html">Tienda</a></li>
+                       <li><a href="contactos.html">contactos</a></li>
+                       <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li> <!-- significa elementos de la lista -->
+                  </div>
+               </ul> <!-- este codigo nos permite poner opciones-->
+           </nav> <!-- cierre de nav-->
+        </div> <!-- cierre de cabecera-->
+   </header> <!-- cierre de cabecera-->
 
     <section id="contactos" class="espacio_6">
         <h2>Contactos</h2>
+        <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Home > Contactanos
+        </p>
     </section> <!-- cierre de contactos-->
+
+    <section id="contactanos-mapa" class="espacio_6">
+        <div class="contenedor_0">
+            <div class="fila">
+                <div class="columna columna-30">
+                    <h2>Sigue conectado</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum atque magnam libero!</p>
+                    <div class="boton">
+                        <h1>
+                            <span class="resaltado"><i class="fa-solid fa-at"></i></span> 
+                            Nuestro correo
+                       </h1>
+                       <a href="mailto:luis2298.r.m@gmail.com"> luis2298.r.m@gmail.com</a>
+                    </div> <!-- cierre de boton-->
+                    <div class="boton">
+                        <h1>
+                            <span class="resaltado"><i class="fa-solid fa-phone"></i></span> 
+                            Nuestro telefono
+                        </h1>
+                        <a href="tel:0051946931450">(+51) 946 931 450</a>
+                    </div> <!-- cierre de boton-->
+                </div> <!-- cierre de columna_0-->
+                <div class="columna_0">
+                    <iframe class="caja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974.9003153361775!2d-76.94721288979056!3d-12.207512163787792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b966875385bf%3A0x982f7c5d7ac5d788!2sClinica%20veterinaria%20Cartagena!5e0!3m2!1ses-419!2spe!4v1670260137045!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> <!-- cierre de columna_0-->
+            </div> <!-- cierre de fila--> 
+        </div> <!-- cierre de contenedor_0-->
+    </section> <!-- cierre de contactos-mapa-->
+
+    <section id="contactanos" class="espacio_6">
+        <div class="contenedor">
+            <form class="formulario" action="grabar.php" method="post">
+                   <h2>Drop Us a Line</h2>
+              <div class="fila">
+                 <div class="columna_0">
+                     <input class="form" type="text" placeholder="Ingresa tu nombre y apellidos" required>
+                 </div> <!-- cierre de contenedor_0-->
+                 <div class="columna_0">
+                     <input class="form" type="tel" placeholder="Ingresa tu numero telefonico" required>
+                 </div> <!-- cierre de contenedor_0-->
+             </div> <!-- cierre de fila-->
+                 <div>
+                    <input class="form" type="email" placeholder="Ingresa tu correo" required>
+                 </div> <!-- cierre de div-->
+                 <div>
+                     <select class="form" required>
+                         <option value="" selected hidden> Escoge un servicio</option>
+                         <option value="1">Baño de mascota</option>
+                         <option value="2">Corte de pelo</option>
+                         <option value="3">Atencion Veterinaria</option>
+                         <option value="4">Hospedaje para mascota</option>
+                    </select> <!-- cierre de form-->
+                 </div> <!-- cierre de div-->
+                 <div>
+                     <input class="form" type="text" placeholder="Ingrese un mensaje">
+                 </div> <!-- cierre de div-->
+                 <p><input type="checkbox" required> He leido y acepto los <a href="#">Terminos y condiciones</a></p>
+                 <p><input type="submit" value="Enviar cita" class="boton-enviar"></p>
+            </form>  <!-- cierre de from--> 
+        </div> <!-- cierre de contenedor-->
+    </section> <!-- cierre de contactanos-->
 
     <footer id="pie">
         <div class="contenedor_5">
@@ -67,5 +132,10 @@
             </div> <!-- cierre de fila-->
         </div> <!-- cierre de contenedor_5-->
     </footer> <!-- cierre de pie-->
+
+    <a href="#" id="boton-inicio">
+        <i class="fa-solid fa-angle-up"></i>
+    </a> <!-- cierre de boton-->
+
 </body>
 </html>

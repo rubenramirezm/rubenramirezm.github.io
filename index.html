@@ -41,34 +41,41 @@
         </div>
     </section>
 
-     <header id="cabecera" class="espacio_cabecera">
-          <div class="contenedor_1">
-             <nav class="barra-de-menu">
-                 <div class="logo">
-                    <a href="index.html">
-                        <img src="imagen/logo-header.png" class="ajustar_img">
-                    </a> <!-- cierre de a-->
-                 </div> <!-- cierre de div-->
-                 <ul class="opciones">
-                    <div class="apartado-opciones">
-                         <li><a href="index.html">Home </a></li> 
-                         <li><a href="paginas.html">Paginas</a></li>
-                         <li><a href="portafolio.html">Portafolio</a></li>
-                         <li><a href="blog.html">Blog</a></li>
-                         <li><a href="tienda.html">Tienda</a></li>
-                         <li><a href="contactos.html">contactos</a></li>
-                         <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li> <!-- significa elementos de la lista -->
-                    </div>
-                 </ul> <!-- este codigo nos permite poner opciones-->
-             </nav> <!-- cierre de nav-->
-          </div> <!-- cierre de cabecera-->
-     </header> <!-- cierre de cabecera-->
+    <header id="cabecera" class="espacio_cabecera">
+        <div class="contenedor_1">
+           <nav class="barra-de-menu">
+               <div class="logo">
+                  <a href="index.html">
+                      <img src="imagen/logo-header.png" class="ajustar_img">
+                  </a> <!-- cierre de a-->
+               </div> <!-- cierre de div-->
+               <ul class="opciones">
+                  <div class="apartado-opciones">
+                       <li><a href="index.html">Home </a></li> 
+                       <li><a href="paginas.html">Paginas</a></li>
+                       <li><a href="portafolio.html">Portafolio</a></li>
+                       <li><a href="blog.html">Blog</a></li>
+                       <li><a href="tienda.html">Tienda</a></li>
+                       <li><a href="contactos.html">contactos</a></li>
+                       <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li> <!-- significa elementos de la lista -->
+                  </div>
+               </ul> <!-- este codigo nos permite poner opciones-->
+           </nav> <!-- cierre de nav-->
+        </div> <!-- cierre de cabecera-->
+   </header> <!-- cierre de cabecera-->
 
-     <section id="portada" class="espacio">
-         <div class="contenedor_2">
-             <h1 class="bienvenida">BIENVENDIOS A PAWSCARE</h1>
-             <h2>El mejor cuidado para <br> nuestros pequeños amigos</h2>
-         </div> <!-- cierre de contenedor-->
+   
+
+     <section id="portada">
+        <div class="video">
+            <video loop autoplay class="video-ajustado">
+                <source src="videos/Perros corriendo.mp4" type="video/mp4">
+            </video>
+            <div class="video-bienvenida">
+                <h1 class="bienvenida">BIENVENDIOS A PAWSCARE</h1>
+                <h2>El mejor cuidado para <br> nuestros pequeños amigos</h2>
+            </div> <!-- cierre de video-bienvenida-->
+        </div> <!-- cierre de video-->
      </section> <!-- cierre de portada-->
 
      <section id="mascotas" class="espacio_2">
@@ -124,19 +131,31 @@
             </div> <!-- cierre de centro-->
               <div class="fila">
                  <div class="columna_0">
-                    <img src="imagen/perritos.jpg" class="ajustar_fotos">
+                    <div class="servicios">
+                        <img src="imagen/perritos.jpg" class="ajustar_fotos">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, perferendis!
+                        </div> <!-- cierre de descripcion-->
+                    </div> <!-- cierre de serviciio-->
                     <h4 class="espacio_parrafo">Hoteles para mascotas</h4>
-                    <p class="espacio_parrafo">Lorem ipsum dolor sit amet <br> consectetur, adipisicing elit. <br> Vitae, corporis.</p>
                  </div> <!-- cierre de columna_0-->
                  <div class="columna_0">
-                    <img src="imagen/veterinario.jpg" class="ajustar_fotos" >
+                    <div class="servicios">
+                        <img src="imagen/veterinario.jpg" class="ajustar_fotos" >
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, alias!
+                        </div> <!-- cierre de descripcion-->
+                    </div> <!-- cierre de serviciio-->
                     <h4 class="espacio_parrafo">Atención veterinaria</h4>
-                    <p class="espacio_parrafo">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Earum, eos!</p>
                  </div> <!-- cierre de columna_0-->
                  <div class="columna_0">
-                    <img src="imagen/gatitos.jpg" class="ajustar_fotos">
+                    <div class="servicios">
+                        <img src="imagen/gatitos.jpg" class="ajustar_fotos">
+                        <div class="descripcion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, perferendis.
+                        </div> <!-- cierre de descripcion-->
+                    </div> <!-- cierre de serviciio-->
                     <h4 class="espacio_parrafo">Mejores actividades</h4>
-                    <p class="espacio_parrafo">Lorem ipsum, dolor sit amet <br> consectetur adipisicing elit. <br> Possimus, dolore?</p>
                  </div> <!-- cierre de columna_0-->
               </div> <!-- cierre de fila-->
          </div> <!-- cierre de contenedor-->
@@ -300,5 +319,9 @@
              </div> <!-- cierre de fila-->
          </div> <!-- cierre de contenedor_5-->
      </footer> <!-- cierre de pie-->
+
+     <a href="#" id="boton-inicio">
+        <i class="fa-solid fa-angle-up"></i>
+     </a> <!-- cierre de boton-->
 </body>
 </html>
